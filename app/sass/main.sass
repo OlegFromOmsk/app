@@ -1,0 +1,116 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
++reset()
+
+.wrapper
+	+wrapper()
+
+body
+	color: #fff
+	background-repeat: no-repeat
+	background-size: cover
+a
+	color: #fff
+	text-decoration: none
+	
+.container
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	height: 100vh
+	&_header
+		+row-flex()
+		+md(text-align, center)
+		a, p
+			font-size: 14px
+			+col()
+			+size(4)
+			+size-md(12)
+			&:last-child
+				text-align: right
+				+md(text-align, center)
+	&_main
+		+row-flex()
+		.h1
+			+col()
+			+size(12)
+			text-align: left
+			font-weight: 900
+			font-size: 70px
+			margin-bottom: 0
+			line-height: 1.1
+		.h2
+			+col()
+			+size(12)
+			font-size: 32px
+    		font-weight: 100
+			line-height: 1.4
+			margin-bottom: 0
+		.form-block
+			+col()
+			+size(5)
+			+size-md(12)
+			.caption
+				margin-bottom: 1.3em
+				text-align: center
+				font-size: 16px
+				line-height: 1.4
+			form
+
+				padding: 0
+				border: 0
+				background-color: transparent
+				box-shadow: none
+				margin-bottom: 40px
+				.form-group
+					margin-bottom: 15px
+					.form-control 
+						border-radius: 21px
+						padding: 10px
+						height: 45px
+						display: block
+						width: 100%
+						font-size: 14px
+						line-height: 1.42857143
+						color: #555
+						background-color: #fff
+						background-image: none
+						border: 1px solid #ccc
+						box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+						transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+						box-sizing: border-box
+				.btn
+					background-color: #f5931b
+					color: #7f6000
+					text-transform: uppercase
+					letter-spacing: 2px
+					font-weight: 100
+					padding: 10px
+					border-radius: 24px
+					height: 48px
+					margin-bottom: 0
+					font-size: 14px
+					line-height: 1.42857143
+					text-align: center
+					touch-action: manipulation
+					cursor: pointer
+					user-select: none
+					background-image: none
+					border: 1px solid transparent
+					box-sizing: border-box
+					white-space: normal
+					width: 100%
+	&_footer
+		+row-flex()
+		+md(text-align, center)
+		p
+			+col()
+			+size(6)
+			+size-md(12)
+			&:last-child
+				text-align: right
+				+md(text-align, center)
+
+	
