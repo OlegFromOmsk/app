@@ -1,0 +1,153 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
++reset()
+.wrapper
+	+wrapper()
+
+a
+	font-family: Helvetica, sans-serif
+	font-size: 16px
+	color: #000
+.header
+	&_top
+		+row-flex()
+		margin-top: 25px
+		margin-bottom: 25px
+		align-items: center
+		&-log
+			+col()
+			+size(2)
+			+size-lg(12)
+			margin-top: -5px
+			+lg-block
+				text-align: center
+				margin-bottom: 15px
+		&-mnu
+			+col()
+			+size(6)
+			+size-lg(12)
+			+lg-block
+				margin-bottom: 25px
+			.mnu_top
+				+sm(display, none)
+				ul
+					display: flex
+					justify-content: flex-start
+					+lg-block
+						justify-content: center
+						
+						
+					li
+						padding-right: 51px
+						+lg-block
+							text-align: center
+							padding: 0 25px
+						a
+							text-decoration: none
+							
+							font-family: Helvetica, sans-serif
+							font-size: 16px
+							&:hover
+								color: #999
+			.mnu_mobile
+				display: none
+				+sm-block
+					display: block
+					position: absolute
+					left: 10px
+					top: 15px
+			.drop_menu
+				+sm(display, none)
+				display: none
+				text-align: right
+				top: 60px
+				position: absolute
+				background-color: #f5df01
+				ul
+					flex-direction: column
+					li
+						padding: 10px 22px
+						border-top: 1px solid #e2c802
+						margin: 0
+						width: 100%
+						&:hover
+							background-color: darken(#f5df01, 5%)
+						a
+							font-size: 16px
+							color: #000	
+							text-decoration: none	
+		&-contacts
+			+col()
+			+size(4)
+			+size-lg(12)
+			display: flex
+			justify-content: space-between
+			align-items: center
+			+lg-block
+				max-width: 400px
+				margin: 0 auto
+			.header_contacts-social
+				a
+					margin-left: 5px
+
+
+			.header_contacts-phone
+				.fa
+					margin-left: 30px
+
+				a
+					margin-left: 5px
+					text-decoration: none
+					color: #000
+					font-family: Helvetica, sans-serif
+					font-size: 16px
+					font-style: normal
+					
+			.header_contacts-cart
+				.fa
+					color: #bcbcbc
+					font-size: 22px
+					padding-right: 25px
+					position: relative
+					#cart-count	
+						position: absolute
+						right: 7px
+						top: -10px
+						font-size: 12px
+						font-family: Proxima, sans-serif
+						
+						padding: 3px 6px
+						border-radius: 10em
+						background-color: #838383
+						color: #fff
+	&_main
+		display: flex
+		align-items: center
+		justify-content: center
+		.wrap
+			max-width: 450px
+			text-align: center
+			padding: 220px 0
+			.h1
+				color: #fff
+				font-size: 74px
+				font-weight: bold
+				letter-spacing: 5px
+				line-height: 95px
+				font-family: Book Antiqua, sans-serif
+			span
+				color: #fff
+				&:before
+					content: ''
+
+			p
+				color: #fff
+				font-size: 36px
+				font-family: Helvetica, sans-serif
+				
+
+				
+				
+
